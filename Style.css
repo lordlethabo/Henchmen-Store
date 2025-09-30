@@ -1,1 +1,80 @@
 
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background: #fff; color: #2F2F2F; }
+
+/* Header */
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  border-bottom:1px solid #ccc;
+}
+header .logo img { height:60px; }
+.search-bar input {
+  padding:8px 12px;
+  width:200px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+.nav-icons img {
+  height:30px;
+  margin-left:15px;
+  cursor:pointer;
+}
+
+/* Hero */
+.hero { position:relative; width:100%; height:70vh; overflow:hidden; }
+.banner { width:100%; height:100%; object-fit:cover; }
+.hero-text {
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  text-align:center; background:rgba(0,0,0,0.5); color:#fff; padding:20px; border-radius:10px;
+}
+.hero-text h1 { font-size:3rem; margin-bottom:10px; }
+.hero-text p { font-size:1.2rem; margin-bottom:15px; }
+.btn { display:inline-block; background:#10B981; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; cursor:pointer; transition:0.3s; }
+.btn:hover { background:#0f8f6b; }
+
+/* Categories */
+.categories {
+  display:flex;
+  overflow-x:auto;
+  padding:20px;
+  gap:15px;
+}
+.category {
+  flex:0 0 auto;
+  background:#f9f9f9;
+  padding:10px 20px;
+  border-radius:8px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  cursor:pointer;
+  transition:0.3s;
+}
+.category:hover { background:#10B981; color:#fff; }
+
+/* Products */
+.products { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; padding:40px 20px; }
+.product { border:1px solid #ccc; padding:15px; text-align:center; border-radius:10px; position:relative; background:#f9f9f9; transition:0.3s; }
+.product:hover { transform:scale(1.03); box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+.product img { width:100%; height:200px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
+.product .badge { position:absolute; top:10px; left:10px; background:#CB997E; color:#fff; padding:5px 10px; border-radius:5px; font-weight:bold; }
+.buy-btn:disabled { opacity:0.5; cursor:not-allowed; }
+
+/* About */
+#about { padding:40px 20px; background:#f2f2f2; text-align:center; }
+#about h2 { font-size:2rem; margin-bottom:15px; }
+#about p { max-width:700px; margin:0 auto; font-size:1rem; line-height:1.6; }
+
+/* Footer */
+footer { padding:20px; background:#222; color:#fff; text-align:center; }
+footer a { color:#10B981; text-decoration:none; }
+footer a:hover { text-decoration:underline; }
+
+/* Responsive */
+@media (max-width:768px) {
+  .hero-text h1 { font-size:2rem; }
+  .hero-text p { font-size:1rem; }
+  .search-bar input { width:120px; }
+}
