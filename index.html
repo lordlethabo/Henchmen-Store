@@ -8,18 +8,21 @@
 </head>
 <body>
 
-<!-- Header / Navigation -->
+<!-- Header / Navbar -->
 <header>
-  <img src="images/logo.png" alt="Henchmen Store Logo" class="logo">
-  <nav>
-    <a href="#">Home</a>
-    <a href="#shop">Shop</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="logo">
+    <img src="images/logo.png" alt="Henchmen Store Logo">
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search products...">
+  </div>
+  <div class="nav-icons">
+    <img src="images/cart.png" alt="Cart">
+    <img src="images/account.png" alt="Account">
+  </div>
 </header>
 
-<!-- Hero Section -->
+<!-- Hero Banner -->
 <section class="hero">
   <img src="images/banner.jpg" alt="Henchmen Banner" class="banner">
   <div class="hero-text">
@@ -29,9 +32,17 @@
   </div>
 </section>
 
+<!-- Categories Scroll -->
+<section class="categories">
+  <div class="category">Men</div>
+  <div class="category">Women</div>
+  <div class="category">Shoes</div>
+  <div class="category">Jackets</div>
+  <div class="category">Accessories</div>
+</section>
+
 <!-- Products Section -->
 <section id="shop" class="products">
-  <!-- Product 1: Sold Out -->
   <div class="product" data-available="false">
     <img src="images/products/shirt.jpg" alt="Vintage Denim Shirt">
     <div class="badge">Sold Out</div>
@@ -40,7 +51,6 @@
     <button class="btn buy-btn" disabled>Buy via WhatsApp</button>
   </div>
 
-  <!-- Product 2: Available -->
   <div class="product" data-available="true">
     <img src="images/products/shoes.jpg" alt="Converse Shoes">
     <h3>Converse All Stars</h3>
@@ -48,7 +58,6 @@
     <button class="btn buy-btn" disabled>Buy via WhatsApp</button>
   </div>
 
-  <!-- Product 3: Available -->
   <div class="product" data-available="true">
     <img src="images/products/jacket.jpg" alt="Leather Jacket">
     <h3>Leather Jacket</h3>
@@ -67,13 +76,12 @@
   </p>
 </section>
 
-<!-- Footer / Contact -->
-<footer id="contact">
+<!-- Footer -->
+<footer>
   <p>Contact us: <a href="mailto:henchmenstore@example.com">henchmenstore@example.com</a> | WhatsApp: +27 721 234 567</p>
   <p>&copy; 2025 Henchmen Store</p>
 </footer>
 
-<!-- Script -->
 <script src="script.js"></script>
 </body>
 </html>
